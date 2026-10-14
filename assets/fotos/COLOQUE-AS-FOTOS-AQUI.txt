@@ -1,0 +1,11 @@
+COLOQUE SUAS 4 FOTOS AQUI
+
+Os arquivos devem ser JPG e ter estes nomes EXATAMENTE:
+foto-1.jpg = A MAIS ANTIGA
+foto-2.jpg = A SEGUNDA MAIS ANTIGA
+foto-3.jpg = A TERCEIRA MAIS ANTIGA
+foto-4.jpg = A MAIS RECENTE
+
+O site embaralha a exibição automaticamente. Não precisa mexer no JavaScript.
+Se faltar alguma foto, aparece uma ilustração temporária.
+Para converter imagens .heic ou .png, exporte como JPG antes de copiar.

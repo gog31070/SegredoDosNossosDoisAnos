@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080f24">
+  <meta name="description" content="Uma história, quatro chaves e um segredo preparado com amor.">
+  <title>O Segredo dos Nossos Dois Anos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="aura aura-one"></div>
+    <div class="aura aura-two"></div>
+    <div class="stars" id="stars"></div>
+  </div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand" aria-label="O Segredo dos Nossos Dois Anos">
+        <span class="brand-emblem" aria-hidden="true">♥</span>
+        <span class="brand-name">G <span>&</span> T</span>
+      </div>
+      <span class="header-occasion">DOIS ANOS <span class="header-sparkle">✦</span> 20.10.2026</span>
+    </header>
+
+    <main id="main" class="main-content">
+      <!-- TELA 1: ABERTURA -->
+      <section id="screen-intro" class="screen screen-intro" data-screen="intro" aria-labelledby="intro-title">
+        <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✦</span> UMA SURPRESA PARA THAINÁ <span class="tiny-star" aria-hidden="true">✦</span></p>
+        <div class="hero-symbol" aria-hidden="true">
+          <span class="orbit orbit-outer"></span>
+          <span class="orbit orbit-inner"></span>
+          <span class="hero-star hero-star-a">✧</span>
+          <span class="hero-star hero-star-b">✦</span>
+          <svg class="hero-key" viewBox="0 0 160 160" fill="none">
+            <circle cx="80" cy="80" r="49" stroke="currentColor" stroke-width="1.5" opacity=".48"/>
+            <path d="M80 35c-14 0-25 11-25 25 0 11 7 20 16 23v33l9 9 9-9v-9h11v-10H89V83c9-3 16-12 16-23 0-14-11-25-25-25Zm0 14a11 11 0 1 1 0 22 11 11 0 0 1 0-22Z" stroke="currentColor" stroke-width="4.3" stroke-linejoin="round" fill="rgba(229,194,128,.11)"/>
+          </svg>
+        </div>
+        <div class="hero-copy">
+          <h1 id="intro-title">O Segredo dos<br><em>Nossos Dois Anos</em></h1>
+          <p class="intro-lead">Algumas histórias são contadas.<br>Outras precisam ser descobertas.</p>
+          <p class="intro-note">Preparei algo só para você, meu amor.</p>
+        </div>
+        <button class="button button-primary hero-button" id="open-invitation" type="button">
+          <span>Abrir o convite</span><span aria-hidden="true">✧</span>
+        </button>
+        <div class="saved-actions" id="saved-actions" hidden>
+          <button class="text-button continue-button" id="resume-experience" type="button">Continuar de onde parei <span aria-hidden="true">→</span></button>
+          <button class="text-button restart-button" id="restart-experience" type="button">↺ Recomeçar do zero</button>
+        </div>
+        <p class="bottom-whisper">Um pequeno mistério. Um grande sentimento.</p>
+      </section>
+
+      <!-- TELA 2: CARTA DE INTRODUÇÃO -->
+      <section id="screen-letter" class="screen screen-letter" data-screen="letter" aria-labelledby="letter-title" hidden>
+        <p class="eyebrow">PRÓLOGO <span aria-hidden="true">✦</span> O CONVITE</p>
+        <div class="letter-scene">
+          <div class="paper-corner paper-corner-top" aria-hidden="true"></div>
+          <div class="paper-corner paper-corner-bottom" aria-hidden="true"></div>
+          <div class="wax-seal" aria-hidden="true">♥</div>
+          <p class="paper-greeting">Para você, Thainá,</p>
+          <h2 id="letter-title">Existe algo que<br><em>quero te contar...</em></h2>
+          <div class="paper-rule" aria-hidden="true">✦</div>
+          <p>Há dois anos, começamos uma história que se tornou a minha favorita.</p>
+          <p>Guardei algumas partes dela em um lugar especial. Mas para descobrir o que está escondido, você precisará encontrar <strong>quatro chaves</strong>.</p>
+          <p>Elas estão nas lembranças, no tempo e em pequenos detalhes que talvez você ainda não tenha percebido.</p>
+          <p class="paper-emphasis">Está pronta para desvendar o nosso segredo?</p>
+          <p class="paper-signature">Com amor, <strong>Gabriel</strong> <span aria-hidden="true">♥</span></p>
+        </div>
+        <button class="button button-primary" id="accept-invitation" type="button">Aceitar o desafio <span aria-hidden="true">→</span></button>
+      </section>
+
+      <!-- TELA 3: COFRE -->
+      <section id="screen-vault" class="screen screen-vault" data-screen="vault" aria-labelledby="vault-title" hidden>
+        <p class="eyebrow">O MISTÉRIO COMEÇA AQUI</p>
+        <h2 class="section-title" id="vault-title">O Cofre das <em>Lembranças</em></h2>
+        <p class="section-description">Quatro fechaduras protegem o que preparei para você. Cada desafio revela uma chave.</p>
+
+        <div class="vault-visual" role="img" aria-label="Cofre misterioso com quatro fechaduras, uma para cada desafio">
+          <div class="vault-hinge hinge-left"></div>
+          <div class="vault-hinge hinge-right"></div>
+          <div class="vault-door">
+            <span class="vault-bolt vault-bolt-tl"></span><span class="vault-bolt vault-bolt-tr"></span>
+            <span class="vault-bolt vault-bolt-bl"></span><span class="vault-bolt vault-bolt-br"></span>
+            <div class="vault-dial">
+              <div class="vault-dial-inner"><span class="vault-center-heart">♥</span><span class="vault-center-text">NOSSA HISTÓRIA</span></div>
+            </div>
+            <span class="vault-lock vault-lock-a" id="vault-lock-a"><span>Ⅰ</span><span class="lock-dot"></span></span>
+            <span class="vault-lock vault-lock-b" id="vault-lock-b"><span>Ⅱ</span><span class="lock-dot"></span></span>
+            <span class="vault-lock vault-lock-c" id="vault-lock-c"><span>Ⅲ</span><span class="lock-dot"></span></span>
+            <span class="vault-lock vault-lock-d" id="vault-lock-d"><span>Ⅳ</span><span class="lock-dot"></span></span>
+          </div>
+        </div>
+
+        <div class="vault-progress">
+          <div class="progress-heading"><span>Chaves encontradas</span><strong id="progress-text">0 / 4</strong></div>
+          <div class="progress-line"><span id="progress-fill"></span></div>
+          <div class="key-slots" aria-label="Progresso da aventura">
+            <div class="key-slot" id="slot-time"><span class="slot-icon" aria-hidden="true">⌛</span><span>Tempo</span><small id="slot-time-status">Pendente</small></div>
+            <div class="key-slot" id="slot-cinema"><span class="slot-icon" aria-hidden="true">✦</span><span>Memórias</span><small id="slot-cinema-status">Pendente</small></div>
+            <div class="key-slot" id="slot-letter"><span class="slot-icon" aria-hidden="true">✉</span><span>Palavras</span><small id="slot-letter-status">Pendente</small></div>
+            <div class="key-slot" id="slot-future"><span class="slot-icon" aria-hidden="true">♡</span><span>Futuro</span><small id="slot-future-status">Pendente</small></div>
+          </div>
+        </div>
+        <p class="vault-message" id="vault-message">A primeira chave espera por você onde tudo começou: no tempo.</p>
+        <button class="button button-primary" id="start-clock" type="button">Começar o primeiro desafio <span aria-hidden="true">→</span></button>
+        <button class="button button-primary" id="start-cinema" type="button" hidden>Entrar no Cinema das Lembranças <span aria-hidden="true">→</span></button>
+        <button class="button button-primary" id="start-letter-puzzle" type="button" hidden>Investigar a Carta Invisível <span aria-hidden="true">→</span></button>
+        <button class="button button-primary" id="start-photos" type="button" hidden>Organizar os Fragmentos do Tempo <span aria-hidden="true">→</span></button>
+        <button class="button button-primary final-start-button" id="start-finale" type="button" hidden>Revelar o último segredo <span aria-hidden="true">✦</span></button>
+        <button class="text-button" id="review-photo-key" type="button" hidden>Rever a Chave do Futuro</button>
+        <button class="text-button" id="review-letter-key" type="button" hidden>Rever a Chave das Palavras</button>
+        <button class="text-button" id="review-clock-key" type="button" hidden>Rever a Chave do Tempo</button>
+        <button class="text-button" id="review-cinema-key" type="button" hidden>Rever a Chave das Lembranças</button>
+        <button class="text-button" id="back-to-letter" type="button">Rever o convite</button>
+      </section>
+
+      <!-- TELA 4: RELÓGIO -->
+      <section id="screen-clock" class="screen screen-clock" data-screen="clock" aria-labelledby="clock-title" hidden>
+        <div class="chapter-topline"><span>CAPÍTULO 01 / 04</span><span>CHAVE DO TEMPO</span></div>
+        <h2 class="section-title" id="clock-title">O Relógio <em>Parado</em></h2>
+        <p class="section-description">Existem instantes que passam... e outros que mudam tudo para sempre.</p>
+        <div class="clue-card"><span class="clue-mark" aria-hidden="true">“</span><p>No dia 20 de outubro de 2024, um relógio parou no instante mais especial da nossa história. <strong>Que horas eram?</strong></p></div>
+        <div class="clock-shell" aria-label="Relógio analógico que acompanha o horário selecionado">
+          <div class="clock-face" id="clock-face">
+            <div id="clock-ticks" class="clock-ticks" aria-hidden="true"></div>
+            <span class="clock-num num-12">12</span><span class="clock-num num-3">3</span><span class="clock-num num-6">6</span><span class="clock-num num-9">9</span>
+            <span class="hand hour-hand"></span><span class="hand minute-hand"></span><span class="clock-pin"></span>
+          </div>
+        </div>
+        <div class="time-controls" aria-label="Ajustar o horário do relógio">
+          <div class="time-unit"><span class="time-label">HORAS</span><button type="button" class="step-button" id="hour-up" aria-label="Aumentar hora">＋</button><output id="hour-value" aria-live="polite">12</output><button type="button" class="step-button" id="hour-down" aria-label="Diminuir hora">−</button></div>
+          <span class="time-colon" aria-hidden="true">:</span>
+          <div class="time-unit"><span class="time-label">MINUTOS</span><button type="button" class="step-button" id="minute-up" aria-label="Aumentar minuto">＋</button><output id="minute-value" aria-live="polite">00</output><button type="button" class="step-button" id="minute-down" aria-label="Diminuir minuto">−</button></div>
+        </div>
+        <div class="clock-feedback" id="clock-feedback" role="status" aria-live="polite"></div>
+        <button class="button button-primary" id="check-time" type="button">Confirmar horário <span aria-hidden="true">✦</span></button>
+        <button class="text-button" id="toggle-hint" type="button" aria-expanded="false">Preciso de uma dica <span aria-hidden="true">?</span></button>
+        <div id="hint-content" class="hint-box" hidden>O horário que você procura é o mesmo em que eu te pedi em namoro. Ele tem quatro algarismos — e sempre será especial para mim. 🩵</div>
+        <button class="text-button text-button-muted" id="back-to-vault" type="button">← Voltar ao cofre</button>
+      </section>
+
+      <!-- TELA 5: PRIMEIRA CHAVE -->
+      <section id="screen-key" class="screen screen-key" data-screen="key" aria-labelledby="key-title" hidden>
+        <p class="eyebrow">CAPÍTULO 01 CONCLUÍDO</p>
+        <div class="success-halo" aria-hidden="true">
+          <span class="success-rays"></span>
+          <svg viewBox="0 0 180 180" class="success-key" fill="none"><path d="M68 38a27 27 0 1 1 0 54 27 27 0 0 1 0-54Zm0 16a11 11 0 1 0 0 22 11 11 0 0 0 0-22ZM95 89l53 53-12 12-11-11-11 11-12-12 11-11-30-30" fill="rgba(238,203,144,.16)" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        </div>
+        <h2 class="section-title" id="key-title">Você encontrou a<br><em>Chave do Tempo</em></h2>
+        <p class="section-description">13:51. O instante em que uma história ganhou um novo começo.</p>
+        <div class="success-message"><p>“Se eu pudesse voltar àquele minuto, faria a mesma escolha mil vezes: <strong>você.</strong>”</p></div>
+        <button class="button button-primary" id="return-with-key" type="button">Guardar a chave no cofre <span aria-hidden="true">→</span></button>
+      </section>
+
+      <!-- TELA 6: CINEMA DAS LEMBRANÇAS -->
+      <section id="screen-cinema" class="screen screen-cinema" data-screen="cinema" aria-labelledby="cinema-title" hidden>
+        <div class="chapter-topline"><span>CAPÍTULO 02 / 04</span><span>CHAVE DAS LEMBRANÇAS</span></div>
+        <p class="cinema-overline"><span aria-hidden="true">✦</span> UMA SESSÃO PARTICULAR <span aria-hidden="true">✦</span></p>
+        <h2 class="section-title" id="cinema-title">O Cinema das <em>Lembranças</em></h2>
+        <p class="section-description">Dois ingressos se perderam no tempo. Você consegue encontrar as sessões que fazem parte da nossa história?</p>
+
+        <div class="cinema-marquee" aria-hidden="true"><span>✦ &nbsp; G &amp; T &nbsp; ✦ &nbsp; NOSSA HISTÓRIA EM CARTAZ &nbsp; ✦</span></div>
+        <div class="cinema-theater">
+          <div class="cinema-curtain cinema-curtain-left" aria-hidden="true"></div>
+          <div class="cinema-curtain cinema-curtain-right" aria-hidden="true"></div>
+          <div class="cinema-theater-screen" aria-live="polite">
+            <span class="cinema-scene-label" id="cinema-scene-label">ATO 01 · A PRIMEIRA SAÍDA</span>
+            <h3 id="cinema-question">Antes de sermos namorados...</h3>
+            <p id="cinema-question-body">Qual foi o primeiro filme que assistimos quando saímos juntos?</p>
+          </div>
+          <div class="cinema-lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="cinema-step-info" id="cinema-step-info"><span class="step-active">INGRESSO 1</span><span class="cinema-step-bridge">—</span><span>INGRESSO 2</span></div>
+        <div class="ticket-choice-grid" id="cinema-choices" role="group" aria-label="Escolha o ingresso correto">
+          <button class="movie-ticket" data-movie="inside" type="button" aria-label="Escolher Divertida Mente 2">
+            <span class="ticket-label"><span>G&amp;T CINEMA</span><span>✦ 2024</span></span>
+            <span class="ticket-art art-inside" aria-hidden="true"><span class="art-halo art-halo-one"></span><span class="art-halo art-halo-two"></span><span class="art-icon">✿</span></span>
+            <span class="ticket-title">Divertida<br>Mente 2</span><span class="ticket-footer"><span>SALA ♥</span><span>ENTRADA ↗</span></span>
+          </button>
+          <button class="movie-ticket" data-movie="joker" type="button" aria-label="Escolher Coringa 2">
+            <span class="ticket-label"><span>G&amp;T CINEMA</span><span>✦ 2024</span></span>
+            <span class="ticket-art art-joker" aria-hidden="true"><span class="art-ribbon"></span><span class="art-icon">♠</span></span>
+            <span class="ticket-title">Coringa 2</span><span class="ticket-footer"><span>SALA ♥</span><span>ENTRADA ↗</span></span>
+          </button>
+          <button class="movie-ticket" data-movie="despicable" type="button" aria-label="Escolher Meu Malvado Favorito 4">
+            <span class="ticket-label"><span>G&amp;T CINEMA</span><span>✦ 2024</span></span>
+            <span class="ticket-art art-despicable" aria-hidden="true"><span class="art-rays"></span><span class="art-icon">✦</span></span>
+            <span class="ticket-title">Meu Malvado<br>Favorito 4</span><span class="ticket-footer"><span>SALA ♥</span><span>ENTRADA ↗</span></span>
+          </button>
+          <button class="movie-ticket" data-movie="robot" type="button" aria-label="Escolher Robô Selvagem">
+            <span class="ticket-label"><span>G&amp;T CINEMA</span><span>✦ 2024</span></span>
+            <span class="ticket-art art-robot" aria-hidden="true"><span class="robot-sun"></span><span class="robot-tree robot-tree-left"></span><span class="robot-tree robot-tree-right"></span><span class="art-icon">✧</span></span>
+            <span class="ticket-title">Robô<br>Selvagem</span><span class="ticket-footer"><span>SALA ♥</span><span>ENTRADA ↗</span></span>
+          </button>
+        </div>
+        <div class="cinema-feedback" id="cinema-feedback" role="status" aria-live="polite"></div>
+        <div class="cinema-interlude" id="cinema-interlude" hidden>
+          <div class="kept-ticket"><span>✦ &nbsp; INGRESSO ENCONTRADO</span><strong>DIVERTIDA MENTE 2</strong><small>Nossa primeira saída juntos ♡</small></div>
+          <p>“Antes mesmo de sermos namorados, nossa história já tinha começado.”</p>
+          <button class="button button-primary" id="cinema-next-act" type="button">Encontrar o segundo ingresso <span aria-hidden="true">→</span></button>
+        </div>
+        <button class="text-button" id="cinema-hint-button" type="button" aria-expanded="false">Preciso de uma dica <span aria-hidden="true">?</span></button>
+        <div class="hint-box" id="cinema-hint" hidden></div>
+        <button class="text-button text-button-muted" id="cinema-back-vault" type="button">← Voltar ao cofre</button>
+      </section>
+
+      <!-- TELA 7: SEGUNDA CHAVE -->
+      <section id="screen-cinema-key" class="screen screen-cinema-key" data-screen="cinema-key" aria-labelledby="cinema-key-title" hidden>
+        <p class="eyebrow">CAPÍTULO 02 CONCLUÍDO</p>
+        <div class="cinema-success-art" aria-hidden="true">
+          <div class="film-reel film-reel-left">✧</div><div class="cinema-success-ticket">G &amp; T <span>✦</span> 20.10.2024</div><div class="film-reel film-reel-right">✧</div>
+        </div>
+        <h2 class="section-title" id="cinema-key-title">Você encontrou a<br><em>Chave das Lembranças</em></h2>
+        <p class="section-description">Dois filmes. Dois momentos. Uma história que é só nossa.</p>
+        <div class="success-message cinema-success-message">
+          <p>“Talvez <strong>Coringa 2</strong> não tenha sido o melhor filme que você já assistiu...”</p>
+          <p>“Mas, para mim, aquele dia teve o final mais bonito que eu poderia imaginar: <strong>sair do cinema namorando você.</strong>” 🩵</p>
+        </div>
+        <div class="cinema-hidden-memory">
+          <span class="cinema-memory-label">✧ UMA LEMBRANÇA A MAIS ✧</span>
+          <p>“E tem outra sessão que eu guardo com um carinho especial: <strong>Robô Selvagem</strong>. Foi o primeiro filme do qual eu saí com vontade de te dizer <strong>eu te amo</strong>.”</p>
+        </div>
+        <div class="cinema-key-glow" aria-hidden="true"><span>✦</span> SEGUNDA CHAVE CONQUISTADA <span>✦</span></div>
+        <button class="button button-primary" id="return-with-cinema-key" type="button">Guardar a segunda chave no cofre <span aria-hidden="true">→</span></button>
+      </section>
+
+      <!-- TELA 8: CAPÍTULO 3, CARTA INVISÍVEL -->
+      <section id="screen-letter-puzzle" class="screen screen-letter-puzzle" data-screen="letter-puzzle" aria-labelledby="secret-letter-title" hidden>
+        <div class="chapter-topline"><span>CAPÍTULO 03 / 04</span><span>CHAVE DAS PALAVRAS</span></div>
+        <p class="secret-overline" aria-hidden="true">✧ &nbsp; ARQUIVO CONFIDENCIAL &nbsp; ✧</p>
+        <h2 class="section-title" id="secret-letter-title">A Carta <em>Invisível</em></h2>
+        <p class="section-description">Nem todo segredo pode ser lido à primeira vista. Passe o mouse ou arraste o dedo pela carta: as palavras aparecem só sob a luz. <strong>Toque nas letras brilhantes</strong> para guardá-las nos fragmentos.</p>
+
+        <div class="flashlight-legend"><span aria-hidden="true">✺</span> MOVA A LANTERNA SOBRE O PAPEL <span aria-hidden="true">✺</span></div>
+        <div class="secret-paper" id="secret-paper" aria-label="Carta com quatro mensagens invisíveis, que só aparecem sob o círculo de luz. Passe o dedo ou mouse sobre o papel.">
+          <div class="paper-frame" aria-hidden="true"></div>
+          <div class="secret-paper-header">Para o meu amor, Thainá <span aria-hidden="true">♥</span></div>
+          <p class="secret-paper-instruction">Há palavras que só a luz certa consegue encontrar...</p>
+          <div class="secret-fragments">
+            <div class="secret-fragment" data-fragment="0"><button type="button" class="fragment-trigger" data-fragment-button="0" aria-label="Investigar o primeiro fragmento">✧</button><p class="fragment-content">“Às vezes penso em como um pequeno ac<strong>A</strong>so pode mudar uma vida inteira. O meu me levou até você.”</p></div>
+            <div class="secret-fragment" data-fragment="1"><button type="button" class="fragment-trigger" data-fragment-button="1" aria-label="Investigar o segundo fragmento">✧</button><p class="fragment-content">“A melhor parte da nossa história é saber que ainda temos tantos ca<strong>M</strong>inhos para descobrir juntos.”</p></div>
+            <div class="secret-fragment" data-fragment="2"><button type="button" class="fragment-trigger" data-fragment-button="2" aria-label="Investigar o terceiro fragmento">✧</button><p class="fragment-content">“Entre os dias comuns e os inesquecíveis, o seu s<strong>O</strong>rriso continua sendo uma das minhas coisas favoritas.”</p></div>
+            <div class="secret-fragment" data-fragment="3"><button type="button" class="fragment-trigger" data-fragment-button="3" aria-label="Investigar o quarto fragmento">✧</button><p class="fragment-content">“E se o mundo inteiro mudasse, eu ainda reconheceria meu lar no seu ab<strong>R</strong>aço.”</p></div>
+          </div>
+          <div class="flashlight-beam" id="flashlight-beam" aria-hidden="true"></div>
+          <div class="secret-paper-footer">Com todo o meu carinho, G. ♡</div>
+        </div>
+        <p class="flashlight-accessibility">No celular, arraste o dedo para iluminar. Ao encontrar a letra maiúscula, toque nela para registrá-la. Fora da luz, a escrita some. Os símbolos ✧ permitem registrar as letras também por teclado.</p>
+        <div class="letter-progress" aria-live="polite"><span>FRAGMENTOS GUARDADOS</span><strong id="letter-counter">0 / 4</strong></div>
+        <div class="letters-collected" aria-label="Letras encontradas">
+          <span data-letter-slot="0">?</span><span data-letter-slot="1">?</span><span data-letter-slot="2">?</span><span data-letter-slot="3">?</span>
+        </div>
+        <div class="secret-lock-panel" id="secret-lock-panel" hidden>
+          <p class="secret-hintline">Quatro fragmentos. Quatro letras. Uma única palavra.</p>
+          <form id="secret-password-form" class="secret-password-form">
+            <label for="secret-password">Qual é a palavra secreta?</label>
+            <input id="secret-password" type="text" maxlength="12" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Digite a palavra..." required>
+            <button class="button button-primary" type="submit">Abrir o cadeado <span aria-hidden="true">✦</span></button>
+          </form>
+        </div>
+        <p class="letter-feedback" id="letter-feedback" role="status" aria-live="polite"></p>
+        <button class="text-button" id="letter-hint-button" type="button">Preciso de uma dica <span aria-hidden="true">?</span></button>
+        <div class="hint-box" id="letter-hint" hidden></div>
+        <button class="text-button text-button-muted" id="letter-back-vault" type="button">← Voltar ao cofre</button>
+      </section>
+
+      <!-- TELA 9: TERCEIRA CHAVE -->
+      <section id="screen-letter-key" class="screen screen-letter-key" data-screen="letter-key" aria-labelledby="letter-key-title" hidden>
+        <p class="eyebrow">CAPÍTULO 03 CONCLUÍDO</p>
+        <div class="letter-success-visual" aria-hidden="true"><div class="letter-success-sparks">✦ &nbsp; ✧ &nbsp; ✦</div><div class="letter-success-envelope">✉<span>AMOR</span></div></div>
+        <h2 class="section-title" id="letter-key-title">Você encontrou a<br><em>Chave das Palavras</em></h2>
+        <p class="section-description">Quatro fragmentos. Quatro letras. E um sentimento que esteve presente o tempo inteiro.</p>
+        <div class="success-message"><p>“Você encontrou a palavra certa. Porque, no fim, <strong>era o amor que estava escondido em cada detalhe.</strong>”</p></div>
+        <div class="cinema-key-glow" aria-hidden="true">✦ TERCEIRA CHAVE CONQUISTADA ✦</div>
+        <button class="button button-primary" id="return-with-letter-key" type="button">Guardar a terceira chave no cofre <span aria-hidden="true">→</span></button>
+      </section>
+
+      <!-- TELA 10: CAPÍTULO 4 — FOTOGRAFIAS -->
+      <section id="screen-photos" class="screen screen-photos" data-screen="photos" aria-labelledby="photos-title" hidden>
+        <div class="chapter-topline"><span>CAPÍTULO 04 / 04</span><span>CHAVE DO FUTURO</span></div>
+        <p class="secret-overline">✧ &nbsp; ARQUIVO DE RECORDAÇÕES &nbsp; ✧</p>
+        <h2 class="section-title" id="photos-title">Os Fragmentos <em>do Tempo</em></h2>
+        <p class="section-description">Quatro fotografias escaparam da nossa linha do tempo. Toque nelas <strong>da mais antiga para a mais recente</strong> para reconstruir a nossa história.</p>
+        <div class="photo-note" id="photo-demo-notice" hidden>✧ Fotos ilustrativas por enquanto. Antes da surpresa, coloque as quatro fotos de vocês na pasta <code>assets/fotos</code>.</div>
+        <div class="photo-wall" id="photo-wall" role="group" aria-label="Quatro fotos embaralhadas. Selecione em ordem cronológica.">
+          <!-- Quatro cartões criados por JavaScript, já embaralhados -->
+        </div>
+        <div class="timeline-head"><span>✧ &nbsp; NOSSA LINHA DO TEMPO &nbsp; ✧</span><small id="photo-counter">0 de 4 lembranças</small></div>
+        <div class="photo-timeline" id="photo-timeline" aria-label="Ordem escolhida das fotos"></div>
+        <div class="photo-controls">
+          <button class="text-button" id="photo-undo" type="button">↶ Desfazer última</button>
+          <button class="text-button" id="photo-clear" type="button">↺ Limpar sequência</button>
+        </div>
+        <p class="photo-feedback" id="photo-feedback" role="status" aria-live="polite"></p>
+        <button class="button button-primary" id="photo-check" type="button" disabled>Conferir a sequência <span aria-hidden="true">✦</span></button>
+        <div class="future-reveal" id="future-reveal" hidden>
+          <span class="future-reveal-star" aria-hidden="true">✦</span>
+          <h3>Quatro lembranças encontradas...</h3>
+          <p>Mas parece que existe uma quinta fotografia.</p>
+          <button class="future-photo-frame" id="future-photo-button" type="button" aria-label="Descobrir a quinta fotografia misteriosa">
+            <span class="future-frame-heart" aria-hidden="true">♡</span>
+            <span>A quinta fotografia</span>
+            <small>TOQUE PARA REVELAR</small>
+          </button>
+          <div id="future-message" hidden>
+            <p class="future-quote">“Essa fotografia ainda não existe. Ela representa todos os momentos que ainda vamos viver juntos.”</p>
+            <p class="future-quote">“Porque, depois de dois anos, a parte mais bonita da nossa história ainda está por vir.”</p>
+            <button class="button button-primary" id="photo-claim" type="button">Encontrar a Chave do Futuro <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <button class="text-button" id="photo-hint-button" type="button">Preciso de uma dica <span aria-hidden="true">?</span></button>
+        <div class="hint-box" id="photo-hint" hidden>Uma boa pista é procurar detalhes nas fotos: roupas, cabelos, lugares e ocasiões. A mais antiga vem primeiro!</div>
+        <button class="text-button text-button-muted" id="photos-back-vault" type="button">← Voltar ao cofre</button>
+      </section>
+
+      <!-- TELA 11: QUARTA CHAVE -->
+      <section id="screen-photo-key" class="screen screen-photo-key" data-screen="photo-key" aria-labelledby="photo-key-title" hidden>
+        <p class="eyebrow">CAPÍTULO 04 CONCLUÍDO</p>
+        <div class="future-key-visual" aria-hidden="true"><span class="future-key-orbit">✧</span><span class="future-key-icon">♡</span><span class="future-key-orbit">✧</span></div>
+        <h2 class="section-title" id="photo-key-title">Você encontrou a<br><em>Chave do Futuro</em></h2>
+        <p class="section-description">Quatro fotografias guardam o que vivemos. A quinta espera por tudo o que ainda vamos viver.</p>
+        <div class="success-message"><p>“Você conseguiu organizar nossas lembranças... mas <strong>minha parte favorita da nossa história é tudo aquilo que ainda vamos construir juntos.</strong>”</p></div>
+        <div class="cinema-key-glow">✦ QUARTA CHAVE CONQUISTADA ✦</div>
+        <button class="button button-primary" id="return-with-photo-key" type="button">Guardar a quarta chave no cofre <span aria-hidden="true">→</span></button>
+      </section>
+
+      <!-- TELA 12: REENCONTRO COM O COFRE -->
+      <section id="screen-final-vault" class="screen final-screen" data-screen="final-vault" aria-labelledby="final-vault-title" hidden>
+        <p class="eyebrow">EPÍLOGO <span aria-hidden="true">✦</span> A GRANDE REVELAÇÃO</p>
+        <h2 class="section-title" id="final-vault-title">O Último <em>Segredo</em></h2>
+        <p class="section-description">O tempo, as lembranças, as palavras e o futuro trouxeram você até aqui. Quatro chaves. Uma última porta.</p>
+        <div class="final-key-grid" aria-label="As quatro chaves encontradas">
+          <div class="final-key-item" style="--key-order:0"><span class="final-key-icon" aria-hidden="true">⌛</span><small>Tempo</small></div>
+          <div class="final-key-item" style="--key-order:1"><span class="final-key-icon" aria-hidden="true">✦</span><small>Memórias</small></div>
+          <div class="final-key-item" style="--key-order:2"><span class="final-key-icon" aria-hidden="true">✉</span><small>Palavras</small></div>
+          <div class="final-key-item" style="--key-order:3"><span class="final-key-icon" aria-hidden="true">♡</span><small>Futuro</small></div>
+        </div>
+        <div class="final-vault-scene" id="final-vault-scene" aria-label="Cofre com quatro fechaduras e um mistério escondido">
+          <span class="final-vault-shine" aria-hidden="true"></span>
+          <div class="final-vault-door" aria-hidden="true">
+            <div class="final-vault-crest">G <span>♡</span> T</div>
+            <div class="final-lock-grid">
+              <span class="final-lock" style="--lock-order:0">Ⅰ</span><span class="final-lock" style="--lock-order:1">Ⅱ</span>
+              <span class="final-lock" style="--lock-order:2">Ⅲ</span><span class="final-lock" style="--lock-order:3">Ⅳ</span>
+            </div>
+            <span class="fifth-lock" aria-hidden="true">Ⅴ</span>
+          </div>
+          <span class="final-vault-base" aria-hidden="true"></span>
+        </div>
+        <p class="final-vault-status" id="final-vault-status" role="status" aria-live="polite">As quatro chaves esperam por você.</p>
+        <button class="button button-primary" id="try-final-vault" type="button">Abrir o cofre <span aria-hidden="true">✧</span></button>
+        <button class="button button-primary" id="reveal-fifth-lock" type="button" hidden>Descobrir o que falta <span aria-hidden="true">→</span></button>
+        <button class="text-button text-button-muted" id="final-back-vault" type="button">← Voltar às chaves</button>
+      </section>
+
+      <!-- TELA 13: A PISTA NO MUNDO REAL -->
+      <section id="screen-final-search" class="screen final-screen" data-screen="final-search" aria-labelledby="final-search-title" hidden>
+        <p class="eyebrow">UM SEGREDO FORA DA TELA</p>
+        <div class="fifth-key-orbit" aria-hidden="true"><span>Ⅴ</span></div>
+        <h2 class="section-title" id="final-search-title">Ainda falta <em>uma chave...</em></h2>
+        <p class="section-description">Você encontrou quatro chaves aqui dentro. A última, porém, não está escondida neste site.</p>
+        <div class="final-clue-card">
+          <span class="secret-overline">✧ &nbsp; PISTA FINAL &nbsp; ✧</span>
+          <p>“Às vezes, aquilo que procuramos está muito mais perto do que imaginamos.”</p>
+          <p class="final-clue-emphasis">Olhe para a surpresa que está com você.</p>
+        </div>
+        <button class="button button-primary" id="found-real-key" type="button">Encontrei a última chave <span aria-hidden="true">🗝</span></button>
+        <button class="text-button" id="final-hint-button" type="button">Preciso de uma pista <span aria-hidden="true">?</span></button>
+        <p class="hint-box final-hint" id="final-hint" hidden role="status"></p>
+        <button class="text-button text-button-muted" id="search-back" type="button">← Voltar ao cofre</button>
+      </section>
+
+      <!-- TELA 14: A SENHA DO ENVELOPE -->
+      <section id="screen-final-password" class="screen final-screen" data-screen="final-password" aria-labelledby="final-password-title" hidden>
+        <p class="eyebrow">A QUINTA CHAVE</p>
+        <div class="final-envelope" aria-hidden="true"><span>✉</span><i>♡</i></div>
+        <h2 class="section-title" id="final-password-title">Uma última <em>palavra</em></h2>
+        <p class="section-description">No envelope que acompanha a chave há uma palavra especial. Só ela pode abrir a quinta fechadura.</p>
+        <form class="final-word-form" id="final-word-form">
+          <label for="final-word">A palavra da última chave</label>
+          <input type="text" id="final-word" maxlength="20" placeholder="Digite a palavra..." autocomplete="off" autocapitalize="characters" spellcheck="false" required>
+          <p id="final-word-feedback" class="final-word-feedback" aria-live="polite" role="status"></p>
+          <button class="button button-primary" type="submit">Desbloquear o segredo <span aria-hidden="true">✦</span></button>
+        </form>
+        <button class="text-button text-button-muted" id="password-back" type="button">← Ainda estou procurando</button>
+      </section>
+
+      <!-- TELA 15: A REVELAÇÃO -->
+      <section id="screen-final-reveal" class="screen final-screen" data-screen="final-reveal" aria-labelledby="final-reveal-title" hidden>
+        <p class="eyebrow">TODAS AS CINCO FECHADURAS ABERTAS</p>
+        <div class="open-vault-visual" aria-hidden="true">
+          <div class="open-vault-lid"></div><div class="open-vault-light"></div><div class="open-vault-letter">♥</div><div class="open-vault-bottom"></div>
+        </div>
+        <h2 class="section-title" id="final-reveal-title">O cofre <em>se abriu!</em></h2>
+        <p class="final-reveal-line">“A última chave nunca foi apenas um objeto...”</p>
+        <p class="final-reveal-answer">Sempre foi <strong>VOCÊ.</strong></p>
+        <p class="section-description">E agora, depois de todas as pistas, chegou a hora de ler aquilo que mais importa.</p>
+        <button class="button button-primary" id="open-final-letter" type="button">Abrir a carta para Thainá <span aria-hidden="true">♡</span></button>
+      </section>
+
+      <!-- TELA 16: DECLARAÇÃO — PERSONALIZAR O TEXTO DESTA SEÇÃO ANTES DE ENTREGAR -->
+      <section id="screen-final-letter" class="screen final-screen" data-screen="final-letter" aria-labelledby="final-letter-title" hidden>
+        <p class="eyebrow">O SEGREDO REVELADO</p>
+        <div class="final-love-letter">
+          <span class="final-paper-ornament" aria-hidden="true">✦ &nbsp; ♡ &nbsp; ✦</span>
+          <h2 id="final-letter-title">Para o amor da minha vida,<br><em>Thainá.</em></h2>
+          <!-- INÍCIO DA DECLARAÇÃO PERSONALIZÁVEL: troque os parágrafos abaixo pelo SEU texto. -->
+          <div class="final-letter-body" id="final-letter-body">
+            <p>Meu amor, durante esta aventura, você voltou aos nossos primeiros momentos, encontrou lembranças e descobriu palavras que guardei especialmente para você.</p>
+            <p>Mas o segredo mais bonito é simples: depois de dois anos, eu continuo escolhendo você, em cada lembrança que já fizemos, em cada momento que ainda vamos viver e vou continuar escolhendo pelo resto da minha vida.</p>
+            <p>Obrigado por ser a parte mais incrível da minha vida. Que venham muitos outros anos, e que nossa vida juntos seja mais linda do que já é.</p>
+          </div>
+          <!-- FIM DA DECLARAÇÃO PERSONALIZÁVEL -->
+          <p class="final-love-signature">Com todo o meu amor,<br><strong>Gabriel ♡</strong></p>
+          <span class="final-letter-date">20.10.2024 · 13:51</span>
+        </div>
+        <button class="button button-primary" id="finish-letter" type="button">Ainda falta uma lembrança... <span aria-hidden="true">→</span></button>
+      </section>
+
+      <!-- TELA 17: A FOTOGRAFIA DO FUTURO -->
+      <section id="screen-final-future" class="screen final-screen" data-screen="final-future" aria-labelledby="final-future-title" hidden>
+        <p class="eyebrow">O FIM DESTE MISTÉRIO. O COMEÇO DE TANTOS OUTROS MOMENTOS.</p>
+        <h2 class="section-title" id="final-future-title">A fotografia que <em>ainda não existe</em></h2>
+        <p class="section-description">Você se lembra da quinta moldura?</p>
+        <div class="last-photo-frame" role="img" aria-label="Uma moldura vazia representando nossas próximas lembranças">
+          <div class="last-photo-inside"><span class="last-photo-heart">♡</span><span>Nossa próxima lembrança</span></div>
+          <span class="last-photo-caption">o melhor ainda está por vir</span>
+        </div>
+        <div class="final-future-message"><p>“Essa fotografia ainda não existe, porque a nossa história não termina aqui.”</p><p>“Ainda temos uma vida inteira de momentos para guardar.”</p></div>
+        <h3 class="final-anniversary">Feliz 2 anos, <em>meu amor!</em> 🩵</h3>
+        <p class="final-signoff">Gabriel &amp; Thainá <span>✦</span> 20.10.2026</p>
+        <button class="button button-primary" id="reread-letter" type="button">Reler minha carta <span aria-hidden="true">♡</span></button>
+        <button class="text-button" id="review-final-vault" type="button">Rever o cofre e as chaves</button>
+      </section>
+    </main>
+
+    <div id="restart-dialog" class="restart-dialog" role="dialog" aria-modal="true" aria-labelledby="restart-title" aria-describedby="restart-description" hidden>
+      <div class="restart-dialog-card">
+        <span class="restart-icon" aria-hidden="true">↺</span>
+        <h2 id="restart-title">Voltar ao começo?</h2>
+        <p id="restart-description">Todas as chaves e respostas salvas serão apagadas neste navegador. Você poderá viver a aventura novamente desde o convite.</p>
+        <button class="button button-primary" id="confirm-restart" type="button">Sim, recomeçar do zero</button>
+        <button class="text-button" id="cancel-restart" type="button">Não, continuar minha história</button>
+      </div>
+    </div>
+
+    <footer class="site-footer"><span aria-hidden="true">✧</span> Feito com amor, para você <span aria-hidden="true">✧</span></footer>
+  </div>
+  <noscript>Este presente precisa do JavaScript ativado no navegador para funcionar.</noscript>
+</body>
+</html>

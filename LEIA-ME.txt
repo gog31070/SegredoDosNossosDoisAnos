@@ -1,0 +1,57 @@
+O SEGREDO DOS NOSSOS DOIS ANOS — VERSÃO 5 (FINAL COMPLETO)
+============================================================
+
+PRONTO
+- Relógio 13:51, cinema (Divertida Mente 2 e Coringa 2), carta invisível AMOR e linha do tempo de fotos.
+- Recomeçar do zero e Continuar de onde parei.
+- EPÍLOGO: quatro fechaduras abrindo, quinta fechadura, pista no mundo real,
+  chave física escondida na cesta, palavra VOCÊ, cofre abrindo, declaração e quinta foto.
+- Salva também o andamento do final e permite reler a carta depois.
+
+ANTES DE ENTREGAR PARA THAINÁ — 3 PASSOS ESSENCIAIS
+
+1) DECLARAÇÃO FINAL: abra index.html em um editor, procure a frase
+   'INÍCIO DA DECLARAÇÃO PERSONALIZÁVEL' e substitua os três parágrafos
+   dentro de <div class="final-letter-body" id="final-letter-body"> ... </div>.
+   Deixe os parágrafos <p> ... </p> e escreva suas próprias palavras.
+   A carta atual é apenas um exemplo bem-acabado para poder testar.
+
+2) FOTOGRAFIAS: coloque quatro arquivos .jpg em assets/fotos:
+   foto-1.jpg = foto mais antiga
+   foto-2.jpg = segunda mais antiga
+   foto-3.jpg = terceira mais antiga
+   foto-4.jpg = foto mais recente
+   Enquanto não houver fotos, o modo de teste mostra Foto 1, Foto 2, etc.
+
+3) CESTA: prepare um mini envelope e cole EMBAIXO da cesta. Coloque a
+   chave física simbólica e um bilhete com a palavra VOCÊ.
+   O site aceita VOCE ou VOCÊ, independentemente de maiúsculas/minúsculas.
+   IMPORTANTE: dê a cesta antes da pessoa alcançar o final do site.
+
+COMO ABRIR
+Extraia o ZIP e abra index.html no navegador; não exige instalação.
+
+COMO TESTAR O EPÍLOGO
+Se já jogou versões anteriores no mesmo navegador, clique em Continuar
+ou volte ao cofre. Após conquistar a quarta chave, clique em
+'Revelar o último segredo' → 'Abrir o cofre' → 'Descobrir o que falta'.
+Siga as pistas, clique em 'Encontrei a última chave' e digite VOCÊ.
+Depois, abra a carta e veja a última fotografia.
+
+TESTE NO CELULAR
+Antes de entregar, publique como site estático (por exemplo GitHub Pages)
+e abra o link/QR Code num celular. Confirme que as imagens carregam,
+que os botões e a lanterna funcionam e que o progresso é salvo.
+
+PROGRESSO
+O armazenamento permanece com a chave 'segredo-nossos-dois-anos-v1',
+compatível com versões anteriores sob a mesma origem.
+'Recomeçar do zero' apaga somente o progresso salvo no navegador,
+não altera as imagens ou os arquivos.
+
+ARQUIVOS
+index.html   — telas e sua declaração
+style.css    — aparência
+script.js    — lógica
+assets/fotos — quatro fotos
+assets/ilustracoes — desenhos provisórios
